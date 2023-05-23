@@ -18,10 +18,14 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
+	font-family: "Brenner Mono";
 }
 .voice2 {
-	font-weight: bold;
+	font-family: "Brenner Sans";
+}
+
+.voice3 {
+	font-family: "Brenner Sans";
 }
 
 /* **********************************************
@@ -32,76 +36,609 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
-.p0 span {
-	opacity: 0;
-	font-family: brenner;
+
+/*Officer KD6-3.7. Let's begin. Ready?*/
+.p0 {
+	left: 13.3em;
+	top: 1em;
+	font-size: 1.8em;
 }
-.p0.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-weight: 200;
-}
+
 .p0.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0s .4s;
 	margin-right: -.25em;
-	font-weight: 400;
+	font-weight: 800;
 }
 .p0.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0s .5s;
 	margin-right: -.25em;
-	font-weight: 600;
+	font-weight: 800;
 }
 .p0.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0s .7s;
 	margin-right: -.25em;
 	font-weight: 800;
 }
 .p0.on span:nth-of-type(5) {
-	opacity: 1;
-	transition: 0s 1.1s;
 	margin-right: -.25em;
-	font-family: "brenner sans";
+	font-weight: 800;
 }
 .p0.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0s 1.4s;
 	margin-right: -.25em;
-	font-family: "brenner display";
+	font-weight: 800;
 }
 .p0.on span:nth-of-type(7) {
-	opacity: 1;
-	transition: 0s 1.7s;
 	margin-right: -.25em;
-	font-family: "brenner script";
+	font-weight: 800;
 }
 .p0.on span:nth-of-type(8) {
-	opacity: 1;
-	transition: 0s 2s;
-	font-family: "brenner script";
-}
-.p0.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0s 3s;
-	font-family: "brenner Sans condensed";
-}
-.p0.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0s 3.2s;
-	font-family: "brenner mono";
-}
-.p0.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s 3.7s;
-	font-family: "brenner slab";
+	font-weight: 800;
 }
 
-.p1.on {
-	background: hotpink;
-	color: red;
+.p0.on span:nth-of-type(11) {
+	font-style: Italic;
 }
+
+
+
+
+
+/*Yes sir*/
+.p1.on {
+	left: 46.7em;
+	bottom: 2.4em;
+	animation: yes 1.9s 1;
+}
+
+@keyframes yes {
+	0%   {transform: scale(.2);}
+	100% {transform: scale(3);}
+}
+
+
+
+
+
+/*Recite your baseline*/
+.p2.on {
+	left: 41em;
+	bottom: 3.2em;
+}
+
+
+
+
+
+/*And blood-black nothingness began to spin*/
+.p3.on {
+	left: 38.5em;
+	top: 3em;
+}
+
+
+
+
+
+/*A system of cells interlinked within cells,*/
+.p4.on {
+	top: 1.5em;
+	left: 23em;
+	font-size: x-large;
+}
+
+.p4.on span:nth-of-type(4){
+	animation: cells 5s;
+}
+
+.p4.on span:nth-of-type(7){
+	animation: cells 5s 1 1.3s;
+}
+
+@keyframes cells {
+	50% {font-weight: bolder; font-size: xx-large;}
+}
+
+
+
+
+
+/*interlinked within cells, interlinked within one stem.*/
+.p5.on {
+	bottom: 1.6em;
+	left: 19em;
+	font-size: x-large;
+}
+
+.p5.on span:first-of-type{
+	animation: cells 8s 1;
+}
+
+.p5.on span:nth-of-type(3) {
+	animation: cells 8s 1 1s;
+}
+
+.p5.on span:nth-of-type(4) {
+	animation: cells 8s 1 1.1s;
+}
+
+
+
+
+/*Fuck off, skin-job!*/
+.p6.on {
+	left: 36em;
+	bottom: 2em;
+	font-size: larger;
+}
+
+
+
+
+
+/*And dreadfully distinct against the dark, a tall white fountain played...*/
+.p7 {
+	left: 33em;
+	bottom: 3em;
+}
+
+
+
+
+/*Cells.*/
+.p8 {
+	bottom: -0.6em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Cells.*/
+.p9 {
+	left: 14.8em;
+	bottom: -0.8em;
+	font-size: 5em;
+}
+
+
+
+
+
+/*Have you ever been in an institution?*/
+.p10 {
+	left: 12.8em;
+	top: 1em;
+	font-size: 2em;
+}
+
+
+
+
+
+/*Cells.*/
+.p11 {
+	bottom: -0.6em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Cells.*/
+.p12 {
+	left: 14.8em;
+	bottom: -0.8em;
+	font-size: 5em;
+}
+
+
+
+
+
+/*Do they keep you in a cell?*/
+.p13 {
+	left: 15.8em;
+	top: 1em;
+	font-size: 2em;
+}
+
+
+
+
+
+/*Cells.*/
+.p14 {
+	bottom: -0.6em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Cells.*/
+.p15 {
+	left: 14.8em;
+	bottom: -0.8em;
+	font-size: 5em;
+}
+
+
+
+
+
+/*When you're not performing your duties, do they keep you in a little box?*/
+.p16 {
+	left: 14.8em;
+	top: 0.5em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Cells.*/
+.p17 {
+	bottom: -0.6em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Cells.*/
+.p18 {
+	left: 14.8em;
+	bottom: -0.8em;
+	font-size: 5em;
+}
+
+
+
+
+
+/*Interlinked*/
+.p19 {
+	bottom: -0.3em;
+	font-size: 3em;
+}
+
+
+
+
+
+/*Interlinked*/
+.p20 {
+	left: 16.7em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*What's it like to hold the hand of someone you love?*/
+.p21 {
+	left: 14.8em;
+	top: 0.5em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Interlinked*/
+.p22 {
+	bottom: -0.3em;
+	font-size: 3em;
+}
+
+
+
+
+
+/*Interlinked*/
+.p23 {
+	left: 16.7em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Did they teach you how to feel, finger to finger?*/
+.p24 {
+	left: 14.8em;
+	top: 0.5em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Interlinked*/
+.p25 {
+	bottom: -0.3em;
+	font-size: 3em;
+}
+
+
+
+
+
+/*Interlinked*/
+.p26 {
+	left: 16.7em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Do you long for having your heart interlinked?*/
+.p27 {
+	left: 14.8em;
+	top: 0.5em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Interlinked*/
+.p28 {
+	bottom: -0.3em;
+	font-size: 3em;
+}
+
+
+
+
+
+/*Interlinked*/
+.p29 {
+	left: 16.7em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Do you dream about being interlinked?*/
+.p30 {
+	left: 15.8em;
+	top: 1em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Interlinked*/
+.p31 {
+	left: 16.7em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*What's it like to hold your child in your arms?*/
+.p32 {
+	left: 14.8em;
+	top: 0.5em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Interlinked*/
+.p33 {
+	bottom: -0.3em;
+	font-size: 3em;
+}
+
+
+
+
+
+/*Interlinked*/
+.p34 {
+	left: 16.7em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Do you feel that there's a part of you that's missing?*/
+.p35 {
+	left: 14.8em;
+	top: 0.5em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Interlinked*/
+.p36 {
+	bottom: -0.3em;
+	font-size: 3em;
+}
+
+
+
+
+
+/*Interlinked*/
+.p37 {
+	left: 16.7em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Within cells interlinked*/
+.p38 {
+	bottom: -0.3em;
+	font-size: 3em;
+}
+
+
+
+
+
+/*Within cells interlinked*/
+.p39 {
+	left: 11em;
+	bottom: -0.4em;
+	font-size: 4em;
+}
+
+
+
+
+
+/*Why don't you say that three times: "within cells interlinked"*/
+.p40 {
+	left: 14.8em;
+	top: 0.5em;
+	width: 27em;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+
+
+
+
+/*Within cells interlinked*/
+.p41 {
+	left: 40%;
+	bottom: 43%;
+	font-size: 2em;
+}
+
+
+
+
+
+/*Within cells interlinked*/
+.p42 {
+	left: 37%;
+	bottom: 43%;
+	font-size: 2.8em;
+}
+
+
+
+
+
+/*Within cells interlinked*/
+.p43 {
+	left: 35%;
+	bottom: 43%;
+	font-size: 3.4em;
+}
+
+
+
+
+
+/*We're done*/
+.p44 {
+	left: 18.7em;
+	top: 0.6em;
+	font-size: 2.3em;
+
+	font-family: "Brenner";
+    font-style: Normal;
+    font-weight: 600;
+}
+
+
+
+
+
+/*Constant K*/
+.p45 {
+	left: 18.7em;
+	top: 0.6em;
+	font-size: 2.3em;
+
+	font-family: "Brenner";
+    font-style: Normal;
+    font-weight: 600;
+}
+
+
+
+
+
+/*You can pick up your bonus.*/
+.p46 {
+	left: 14em;
+	top: 0.6em;
+	font-size: 2.3em;
+
+	font-family: "Brenner";
+    font-style: Normal;
+    font-weight: 600;
+}
+
+
+
+
+
+/*Thank you sir*/
+.p47 {
+	left: 17.8em;
+	bottom: 0.3em;
+	font-size: 2.3em;
+}
+
+
+
+
+
+
 
 /* **********************************************
 Sounds.
@@ -110,16 +647,296 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-	background: hotpink;
+.sound0 #video-mask {
+	animation: start 1s 1;
 }
 
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
+@keyframes start {
+	0% {transform: scale(0.2);}
+	50% {transform: scale(1.2);}
+	100% {transform: scale(1);}
+}
+
 .sound1 #video-mask {
-	box-shadow: 2em 2em 2em olivedrab;
+	animation: shadow 2s 1;
 }
 
+@keyframes shadow {
+	50% {box-shadow: 0px 0px 50px 60px rgb(255, 0, 0)}
+}
+
+.sound2 {
+	animation: police 4s ease 1;
+}
+
+@keyframes police {
+    0%{background: linear-gradient(270deg, #d90b0b, #0f07b0); background-size: 400% 400%; background-position:0% 50%}
+    15%{background-position:100% 50%}
+	25%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	60%{background-position:0% 50%}
+	75%{background-position:100% 50%}
+    99%{background-position:0% 50%}
+	100%{background: white;}
+}
+
+.sound2 p {
+	animation: blood2 4s 1;
+}
+
+@keyframes blood2 {
+	0% {color: black;}
+	15% {color: white;}
+	70% {color: black;}
+}
+
+.sound4 #video-mask {
+	animation: drop 2s 1;
+}
+
+.sound4 #video-container {
+	border: 60px black;
+}
+
+@keyframes drop {
+	50% {box-shadow: 2px -1px 97px 19px rgba(7,3,65,1);}
+}
+
+/* @keyframes drop {
+	50% {box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);}
+} */
+
+/* @keyframes border {
+	0% {border: 0px black;}
+	50% {border: 60px black;}
+	100% {border: 0px black;}
+} */
+
+.sound6 {
+	animation: skin-job 3s 1;
+}
+
+.sound7 p {
+	animation: boos 3s 1;
+}
+
+@keyframes skin-job {
+	0% {background: white;}
+	50% {background: black;}
+	100% {background: white;}
+}
+
+@keyframes boos {
+	0% {color: black;}
+	15% {color: white;}
+	70% {color: black;}
+}
+
+.sound5 #video-mask {
+	animation: alarm 2s 1;
+}
+
+.sound8 #video-mask {
+	animation: alarm2 2s 1;
+}
+
+@keyframes alarm {
+	50% {box-shadow: 0px 0px 30px 30px rgb(66, 0, 88);}
+}
+
+@keyframes alarm2 {
+	50% {box-shadow: 0px 0px 30px 30px rgb(66, 0, 88);}
+}
+
+.sound9 #video-mask {
+	animation: alarm3 2s 1;
+}
+
+@keyframes alarm3 {
+	50% {box-shadow: 0px 0px 30px 30px rgb(66, 0, 88);}
+}
+
+/*Begin verhoor*/
+.sound10 {
+	animation: verhoor 42.3s 1;
+}
+
+.sound10 #video-mask {
+	animation: shake 1s infinite;
+}
+
+.sound10 p {
+	color: black;
+}
+
+@keyframes shake {
+	0% { transform: translate(0.4px, 0.2px) rotate(0deg); }
+	10% { transform: translate(-0.2px, -0.3px) rotate(-0.2deg); }
+	20% { transform: translate(-0.4px, 0px) rotate(0.2deg); }
+	30% { transform: translate(0px, 0.3px) rotate(0deg); }
+	40% { transform: translate(0.2px, -0.2px) rotate(0.2deg); }
+	50% { transform: translate(-0.2px, 0.3px) rotate(-0.2deg); }
+	60% { transform: translate(-0.4px, 0.2px) rotate(0deg); }
+	70% { transform: translate(0.3px, 0.2px) rotate(-0.2deg); }
+	80% { transform: translate(-0.2px, -0.2px) rotate(0.2deg); }
+	90% { transform: translate(0.3px, 0.3px) rotate(0deg); }
+	100% { transform: translate(0.3px, -0.2px) rotate(-0.2deg); }
+}
+
+@keyframes verhoor {
+	0% {background: white;}
+	99% {background: black;}
+	100% {background: white;}
+}
+
+
+
+.sound11 #video-mask {
+	animation: shake2 1s infinite;
+}
+
+@keyframes shake2 {
+	0% { transform: translate(0.8px, 0.4px) rotate(0deg); }
+	10% { transform: translate(-0.4px, -0.6px) rotate(-0.4deg); }
+	20% { transform: translate(-0.8px, 0.2px) rotate(0.4deg); }
+	30% { transform: translate(0.2px, 0.3px) rotate(0deg); }
+	40% { transform: translate(0.4px, -0.4px) rotate(0.4deg); }
+	50% { transform: translate(-0.4px, 0.6px) rotate(-0.4deg); }
+	60% { transform: translate(-0.8px, 0.4px) rotate(0deg); }
+	70% { transform: translate(0.6px, 0.4px) rotate(-0.4deg); }
+	80% { transform: translate(-0.4px, -0.4px) rotate(0.4deg); }
+	90% { transform: translate(0.6px, 0.6px) rotate(0deg); }
+	100% { transform: translate(0.6px, -0.4px) rotate(-0.4deg); }
+}
+
+.sound12 #video-mask {
+	animation: shake3 1s infinite;
+}
+
+@keyframes shake3 {
+	0% { transform: translate(1.6px, 0.8px) rotate(0deg); }
+	10% { transform: translate(-0.8px, -1.2px) rotate(-0.8deg); }
+	20% { transform: translate(-1.6px, 0.4px) rotate(0.8deg); }
+	30% { transform: translate(0.4px, 0.2px) rotate(0deg); }
+	40% { transform: translate(0.8px, -0.8px) rotate(0.8deg); }
+	50% { transform: translate(-0.8px, 1.2px) rotate(-0.8deg); }
+	60% { transform: translate(-1.6px, 0.8px) rotate(0deg); }
+	70% { transform: translate(1.2px, 0.8px) rotate(-0.8deg); }
+	80% { transform: translate(-0.8px, -0.8px) rotate(0.8deg); }
+	90% { transform: translate(1.2px, 1.2px) rotate(0deg); }
+	100% { transform: translate(1.2px, -0.8px) rotate(-0.8deg); }
+}
+
+.sound13 p {
+	color: white;
+}
+
+.sound13 #video-mask {
+	animation: shake4 1s infinite;
+}
+
+@keyframes shake4 {
+	0% { transform: translate(3.2px, 1.6px) rotate(0deg); }
+	10% { transform: translate(-1.6px, -2.4px) rotate(-1.6deg); }
+	20% { transform: translate(-3.2px, 1.6px) rotate(1.6deg); }
+	30% { transform: translate(1.6px, 0.8px) rotate(0deg); }
+	40% { transform: translate(1.6px, -1.6px) rotate(1.6deg); }
+	50% { transform: translate(-1.6px, 2.4px) rotate(-1.6deg); }
+	60% { transform: translate(-3.2px, 1.6px) rotate(0deg); }
+	70% { transform: translate(2.4px, 1.6px) rotate(-1.6deg); }
+	80% { transform: translate(-1.6px, -1.6px) rotate(1.6deg); }
+	90% { transform: translate(2.4px, 2.4px) rotate(0deg); }
+	100% { transform: translate(2.4px, -1.6px) rotate(-1.6deg); }
+}
+
+.sound14 #video-mask {
+	animation: shake5 1s infinite;
+}
+
+@keyframes shake5 {
+	0% { transform: translate(6.4px, 3.2px) rotate(0deg); }
+	10% { transform: translate(-3.2px, -4.8px) rotate(-3.2deg); }
+	20% { transform: translate(-6.4px, 3.2px) rotate(3.2deg); }
+	30% { transform: translate(3.2px, 1.6px) rotate(0deg); }
+	40% { transform: translate(3.2px, -3.2px) rotate(3.2deg); }
+	50% { transform: translate(-3.2px, 4.8px) rotate(-3.2deg); }
+	60% { transform: translate(-6.4px, 3.2px) rotate(0deg); }
+	70% { transform: translate(4.8px, 3.2px) rotate(-3.2deg); }
+	80% { transform: translate(-3.2px, -3.2px) rotate(3.2deg); }
+	90% { transform: translate(4.8px, 4.8px) rotate(0deg); }
+	100% { transform: translate(4.8px, -3.2px) rotate(-3.2deg); }
+}
+
+.sound15 #video-mask {
+	animation: shake6 1s infinite;
+}
+
+@keyframes shake6 {
+	0% { transform: translate(12.8px, 6.4px) rotate(0deg); }
+	10% { transform: translate(-6.4px, -9.6px) rotate(-6.4deg); }
+	20% { transform: translate(-12.8px, 6.4px) rotate(6.4deg); }
+	30% { transform: translate(6.4px, 3.2px) rotate(0deg); }
+	40% { transform: translate(6.4px, -6.4px) rotate(6.4deg); }
+	50% { transform: translate(-6.4px, 9.6px) rotate(-6.4deg); }
+	60% { transform: translate(-12.8px, 6.4px) rotate(0deg); }
+	70% { transform: translate(9.6px, 6.4px) rotate(-6.4deg); }
+	80% { transform: translate(-6.4px, -6.4px) rotate(6.4deg); }
+	90% { transform: translate(9.6px, 12.8px) rotate(0deg); }
+	100% { transform: translate(9.6px, -6.4px) rotate(-6.4deg); }
+}
+
+.sound16 #video-mask {
+	animation: shake7 1s infinite;
+}
+
+@keyframes shake7 {
+	0% { transform: translate(25.6px, 12.8px) rotate(0deg); }
+	10% { transform: translate(-12.8px, -19.2px) rotate(-12.8deg); }
+	20% { transform: translate(-25.6px, 12.8px) rotate(12.8deg); }
+	30% { transform: translate(12.8px, 6.4px) rotate(0deg); }
+	40% { transform: translate(12.8px, -12.8px) rotate(12.8deg); }
+	50% { transform: translate(-12.8px, 19.2px) rotate(-12.8deg); }
+	60% { transform: translate(-25.6px, 12.8px) rotate(0deg); }
+	70% { transform: translate(19.2px, 12.8px) rotate(-12.8deg); }
+	80% { transform: translate(-12.8px, -12.8px) rotate(12.8deg); }
+	90% { transform: translate(19.2px, 25.6px) rotate(0deg); }
+	100% { transform: translate(19.2px, -12.8px) rotate(-12.8deg); }
+}
+
+.sound17 #video-mask {
+	animation: shake8 1s infinite;
+}
+
+@keyframes shake8 {
+	0% { transform: translate(51.2px, 25.6px) rotate(0deg); }
+	10% { transform: translate(-25.6px, -38.4px) rotate(-25.6deg); }
+	20% { transform: translate(-51.2px, 25.6px) rotate(25.6deg); }
+	30% { transform: translate(25.6px, 12.8px) rotate(0deg); }
+	40% { transform: translate(25.6px, -25.6px) rotate(25.6deg); }
+	50% { transform: translate(-25.6px, 38.4px) rotate(-25.6deg); }
+	60% { transform: translate(-51.2px, 25.6px) rotate(0deg); }
+	70% { transform: translate(38.4px, 25.6px) rotate(-25.6deg); }
+	80% { transform: translate(-25.6px, -25.6px) rotate(25.6deg); }
+	90% { transform: translate(38.4px, 51.2px) rotate(0deg); }
+	100% { transform: translate(38.4px, -25.6px) rotate(-25.6deg); }
+}
+
+.sound18 {
+	background: white;
+}
+
+.sound18 p {
+	color: black;
+}
+
+.sound18 #video-mask {
+	animation: shake9 1s infinite;
+}
+
+@keyframes shake9 {
+	0% { transform: translate(0px, 0px) rotate(0deg); }
+	100% { transform: translate(0px, 0px) rotate(0deg); }
+}
 
 /* **********************************************
 Basic layout.
